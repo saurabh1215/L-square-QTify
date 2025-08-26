@@ -1,0 +1,85 @@
+.section {
+  margin: 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px; /* reduce space */
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.seeAllBtn {
+  background: none;
+  border: none;
+  color: #34c94b;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0;
+}
+
+.carouselWrapper {
+  position: relative;
+}
+
+
+
+
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.navButton img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+.alice-carousel__stage {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.alice-carousel__stage-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure card itself has no spacing */
+.card {
+  margin: 0 !important;
+}
+
+.gridView {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* always 7 per row */
+  gap: 12px; /* small neat gap */
+}
+

@@ -1,0 +1,97 @@
+.section {
+  padding: 20px;
+  background: #000;
+  color: white;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Tabs wrapper */
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin-bottom: 16px;
+}
+
+/* Tabs container */
+.tabs .MuiTabs-flexContainer {
+  border-bottom: none; /* remove default underline */
+}
+
+/* Tab text */
+.tabs .MuiTab-root {
+  color: white !important;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 16px;
+  min-width: auto !important; /* remove default width */
+  padding: 0 12px !important;
+}
+
+/* Tab label wrapper */
+.tabs .MuiTab-wrapper {
+  color: white !important;
+}
+
+/* Selected tab text */
+.tabs .Mui-selected .MuiTab-wrapper {
+  color: white !important;
+}
+
+/* Bottom indicator */
+.tabs .MuiTabs-indicator {
+  background-color: #34c94b !important;
+  height: 3px;
+  width: fit-content !important; /* indicator width matches text */
+  margin-left: 0 !important;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Carousel wrapper */
+.carouselWrapper {
+  position: relative;
+}
+
+/* Prev/Next buttons */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.navButton img {
+  width: 24px;
+  height: 24px;
+}
+
+/* AliceCarousel inner items spacing */
+.alice-carousel__stage-item {
+  padding: 0 4px;
+}

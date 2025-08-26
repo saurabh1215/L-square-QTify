@@ -1,0 +1,41 @@
+.card {
+  background: #181818;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-bottom {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.album-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.follow-chip {
+  background: #34c94b !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  height: 22px;
+  align-self: flex-start;
+}
