@@ -1,0 +1,12 @@
+.logoWrapper {
+  display: flex;
+  align-items: center; /* vertically center */
+  justify-content: center; /* optional if needed */
+  padding-left: 10px; /* space to the left */
+}
+
+.logoImage {
+  width: 67px;
+  height: auto;
+  display: block;
+}

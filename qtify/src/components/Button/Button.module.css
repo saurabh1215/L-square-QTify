@@ -1,12 +1,13 @@
 .button {
-  padding: 8px 16px;
+  background-color: black; /* black background */
+  color: #1ed760; /* green text */
   border: none;
-  border-radius: 4px;
-  background-color: var(--color-primary, #34c94b);
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
+  border-radius: 10px; /* some border-radius */
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  padding: 10px 20px;
+  cursor: pointer; /* hover pointer */
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
 .button:hover {

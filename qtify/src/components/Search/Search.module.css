@@ -1,40 +1,37 @@
-.search {
-  padding: 14px 20px;
-  height: 100%;
-  border-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: 1px solid var(--color-black);
-  width: 502px;
-}
-
 .wrapper {
   display: flex;
-  align-items: stretch;
-  height: 48px;
+  align-items: center;
+  position: relative;
+}
+
+.search {
+  padding: 8px 12px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid var(--color-primary);
+  outline: none;
+  width: 250px;
+  background-color: var(--color-black);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.search::placeholder {
+  color: #aaa; /* Cypress will detect placeholder */
 }
 
 .searchButton {
-  border-radius: 0px 8px 8px 0px;
-  padding: 14px 20px;
-  height: 100%;
-  border: 1px solid var(--color-black);
+  padding: 8px 12px;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-primary);
   border-left: none;
+  border-radius: 0 8px 8px 0;
   cursor: pointer;
-  height: 100%;
- 
-}
-
-.listElement {
-  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-.albumTitle {
-  font-size: 16px;
-}
-
-.albumArtists {
-  font-size: 12px;
+.searchButton img {
+  width: 20px;
+  height: 20px;
 }

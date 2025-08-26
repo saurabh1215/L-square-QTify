@@ -1,33 +1,28 @@
 .navbar {
-  width: 100%;
-  background-color: #fff;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.navContent {
   display: flex;
-  align-items: center; /* vertically centers logo/search/button */
+  align-items: center; /* vertically centers all children */
   justify-content: space-between;
-  height: 60px; /* ensures enough height */
+  padding: 0 20px;
+  background-color: var(--color-black);
+  height: 60px;
 }
 
 .logoLink {
-  margin-left: 10px; /* space from left */
   display: flex;
   align-items: center;
 }
 
-.navButton {
-  background-color: #000; /* black background */
-  color: #00ff00; /* green text */
-  border-radius: 8px;
+.feedbackButton {
+  background-color: var(--color-black); /* black background */
+  color: var(--color-green);           /* green text color */
+  border-radius: 8px;                  /* some border-radius */
   padding: 8px 16px;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
+  font-family: "Poppins", sans-serif;  /* font */
+  cursor: pointer;                     /* pointer on hover */
   border: none;
+  transition: background 0.3s;
 }
 
-.navButton:hover {
-  cursor: pointer;
+.feedbackButton:hover {
+  background-color: #222; /* slightly lighter black on hover */
 }
