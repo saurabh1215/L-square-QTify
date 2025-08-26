@@ -1,15 +1,16 @@
+/* Button.module.css */
 .button {
-  background-color: black; /* black background */
-  color: #1ed760; /* green text */
+  background-color: black;       /* Black background */
+  color: #1ed760;               /* Green text */
   border: none;
-  border-radius: 10px; /* some border-radius */
-  font-family: "Poppins", sans-serif; /* Poppins font */
+  border-radius: 8px;           /* Rounded corners */
+  font-family: 'Poppins', sans-serif; /* Font */
   padding: 10px 20px;
-  cursor: pointer; /* hover pointer */
+  cursor: pointer;              /* Pointer on hover */
   font-size: 16px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
-  opacity: 0.9;
+  background-color: #222;       /* Slightly lighter on hover */
 }

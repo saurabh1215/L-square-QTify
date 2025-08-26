@@ -1,28 +1,11 @@
 .navbar {
   display: flex;
-  align-items: center; /* vertically centers all children */
+  align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--color-black);
-  height: 60px;
 }
-
 .logoLink {
   display: flex;
   align-items: center;
-}
-
-.feedbackButton {
-  background-color: var(--color-black); /* black background */
-  color: var(--color-green);           /* green text color */
-  border-radius: 8px;                  /* some border-radius */
-  padding: 8px 16px;
-  font-family: "Poppins", sans-serif;  /* font */
-  cursor: pointer;                     /* pointer on hover */
-  border: none;
-  transition: background 0.3s;
-}
-
-.feedbackButton:hover {
-  background-color: #222; /* slightly lighter black on hover */
 }
