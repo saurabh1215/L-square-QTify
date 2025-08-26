@@ -12,7 +12,7 @@ function Section({ title, data, showSeeAll = true, isSong = false }) {
   const carouselRef = useRef(null);
   const [showAll, setShowAll] = useState(false);
 
-  // ✅ Defensive mapping
+  // Defensive mapping
   const items = Array.isArray(data)
     ? data.map((item, index) => (
         <Card key={index} album={item} isSong={isSong} />
@@ -28,7 +28,8 @@ function Section({ title, data, showSeeAll = true, isSong = false }) {
             className={styles.seeAllBtn}
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "Collapse" : "See All"}
+            {/* Always include "Show All" text for Cypress */}
+            {showAll ? "Collapse" : "Show All"}
           </button>
         )}
       </div>
@@ -48,21 +49,21 @@ function Section({ title, data, showSeeAll = true, isSong = false }) {
               0: { items: 2 },
               512: { items: 4 },
               1024: { items: 6 },
-              1440: { items: 7 }, // for big screens
+              1440: { items: 7 },
             }}
           />
-           <button
-                    className={`${styles.navButton} ${styles.prevButton}`}
-                    onClick={() => carouselRef.current?.slidePrev()}
-                  >
-                    <img src={prevIcon} alt="Previous" />
-                  </button>
-                  <button
-                    className={`${styles.navButton} ${styles.nextButton}`}
-                    onClick={() => carouselRef.current?.slideNext()}
-                  >
-                    <img src={nextIcon} alt="Next" />
-                  </button>
+          <button
+            className={`${styles.navButton} ${styles.prevButton}`}
+            onClick={() => carouselRef.current?.slidePrev()}
+          >
+            <img src={prevIcon} alt="Previous" />
+          </button>
+          <button
+            className={`${styles.navButton} ${styles.nextButton}`}
+            onClick={() => carouselRef.current?.slideNext()}
+          >
+            <img src={nextIcon} alt="Next" />
+          </button>
         </div>
       )}
     </div>
