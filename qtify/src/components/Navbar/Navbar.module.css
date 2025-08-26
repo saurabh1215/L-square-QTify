@@ -1,37 +1,33 @@
-/* .navbar {
-  background-color: var(--color-background, #121212);
-  height: 74px;
-  width: 100vw;
-  padding: 0px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-
 .navbar {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navContent {
+  display: flex;
+  align-items: center; /* vertically centers logo/search/button */
+  justify-content: space-between;
+  height: 60px; /* ensures enough height */
+}
+
+.logoLink {
+  margin-left: 10px; /* space from left */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #34c94b;
-  padding: 10px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-.navbar button {
-  background: white;
-  color: #2aca55;
+.navButton {
+  background-color: #000; /* black background */
+  color: #00ff00; /* green text */
+  border-radius: 8px;
   padding: 8px 16px;
-  border-radius: 20px;
-  border: none;
-  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  border: none;
 }
 
-.navbar button:hover {
-  background: #222;
+.navButton:hover {
+  cursor: pointer;
 }
-
